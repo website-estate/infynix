@@ -13,6 +13,9 @@ export default function Header() {
       setIsScrolled(window.scrollY > 20);
     };
 
+    // Initialize state on mount (fixes issue where refresh keeps scroll position)
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -20,7 +23,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-          ? "bg-[var(--primary)]/5 backdrop-blur-md shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] py-3"
+          ? "bg-[var(--header-bg)] backdrop-blur-md shadow-[var(--header-shadow)] py-3"
           : "bg-transparent py-6"
         }`}
     >
