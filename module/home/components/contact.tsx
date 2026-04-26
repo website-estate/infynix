@@ -39,20 +39,20 @@ export default function Contact() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-[var(--black-400)] text-[10px] font-black uppercase tracking-widest ml-1">Full Name</label>
-                  <input type="text" placeholder="John Doe" className="w-full bg-white border border-[var(--black-200)] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[var(--primary)] transition-colors" />
+                  <input type="text" placeholder="John Doe" className="w-full bg-white border border-[var(--black-200)] rounded-xl px-4 py-3 text-sm placeholder:text-[var(--black-400)] focus:outline-none focus:border-[var(--primary)] transition-colors" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-[var(--black-400)] text-[10px] font-black uppercase tracking-widest ml-1">Email Address</label>
-                  <input type="email" placeholder="john@example.com" className="w-full bg-white border border-[var(--black-200)] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[var(--primary)] transition-colors" />
+                  <input type="email" placeholder="john@example.com" className="w-full bg-white border border-[var(--black-200)] rounded-xl px-4 py-3 text-sm placeholder:text-[var(--black-400)] focus:outline-none focus:border-[var(--primary)] transition-colors" />
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="text-[var(--black-400)] text-[10px] font-black uppercase tracking-widest ml-1">Subject</label>
-                <input type="text" placeholder="Project Inquiry" className="w-full bg-white border border-[var(--black-200)] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[var(--primary)] transition-colors" />
+                <input type="text" placeholder="Project Inquiry" className="w-full bg-white border border-[var(--black-200)] rounded-xl px-4 py-3 text-sm placeholder:text-[var(--black-400)] focus:outline-none focus:border-[var(--primary)] transition-colors" />
               </div>
               <div className="space-y-2">
                 <label className="text-[var(--black-400)] text-[10px] font-black uppercase tracking-widest ml-1">Message</label>
-                <textarea rows={4} placeholder="Tell us about your project..." className="w-full bg-white border border-[var(--black-200)] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[var(--primary)] transition-colors resize-none"></textarea>
+                <textarea rows={4} placeholder="Tell us about your project..." className="w-full bg-white border border-[var(--black-200)] rounded-xl px-4 py-3 text-sm placeholder:text-[var(--black-400)] focus:outline-none focus:border-[var(--primary)] transition-colors resize-none"></textarea>
               </div>
               <button className="btn-primary w-full py-4 rounded-xl font-black uppercase tracking-widest text-sm shadow-lg shadow-[var(--primary)]/10">
                 Send Message
