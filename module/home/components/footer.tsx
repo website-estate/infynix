@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 export default function Footer() {
   const [mounted, setMounted] = useState(false);
@@ -23,7 +22,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-8">
-              <img src="/assets/logo.svg" alt="Infynix Logo" className="h-10 w-auto" />
+              <img src="/assets/footer_logo.svg" alt="Infynix Logo" className="h-10 w-auto" />
             </div>
             <p className="text-white/40 text-base leading-relaxed max-w-sm">
               We engineer digital excellence for brands that dare to lead. Transforming visions into high-performance realities.
